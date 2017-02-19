@@ -73,7 +73,7 @@ export default {
       return this.date.year()
     },
     monthWeeks() {
-      return getDaysOfWeek();
+      return getDaysOfWeek(this.date);
     },
   },
 
