@@ -11,6 +11,9 @@
 
     <div class="month-days">
       <table>
+        <tr>
+          <th v-for="dayName in dayNames">{{ dayName }}</th>
+        </tr>
         <tr v-for="week in monthWeeks">
           <td v-for="day in week" v-on:click="updateDay(day)">{{ day }}</td>
         </tr>
@@ -61,7 +64,8 @@ export default {
 
   data() {
     return {
-      date: moment()
+      date: moment(),
+      dayNames: ['Su', 'M', 'T', 'W', 'Th', 'F', 'Sa']
     }
   },
 
@@ -133,6 +137,11 @@ export default {
 .month-days td {
   padding: 5px;
   cursor: pointer;
+}
+
+.month-days th {
+  padding: 5px;
+  font-size: 20px;
 }
 
 .month-days td:hover {

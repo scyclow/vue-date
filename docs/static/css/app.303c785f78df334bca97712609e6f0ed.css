@@ -79,6 +79,10 @@
   padding: 5px;
   cursor: pointer;
 }
+.month-days th[data-v-545a174e] {
+  padding: 5px;
+  font-size: 20px;
+}
 .month-days td[data-v-545a174e]:hover {
   background-color: #bbb;
   -webkit-user-select: none;
@@ -88,4 +92,4 @@
 }
 
 
-/*# sourceMappingURL=app.f73f860ebd2af005e83261d77d8d1d3c.css.map*/
+/*# sourceMappingURL=app.303c785f78df334bca97712609e6f0ed.css.map*/
